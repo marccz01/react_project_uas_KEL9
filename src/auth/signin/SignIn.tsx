@@ -1,6 +1,6 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import { Button, Form } from "react-bootstrap";
-import ApiClient from "../../utils/ApiClient";
+import ApiClient from "../../utils/Apiclient.ts";
 import { NavLink, useNavigate } from "react-router";
 
 interface SignInForm {
@@ -33,7 +33,7 @@ function SignIn() {
 
             if(response.status === 200){
                 localStorage.setItem("AuthToken", response.data.data.token);
-                navigate("/movies", {
+                navigate("/booking", {
                     replace : true
                 });
             }

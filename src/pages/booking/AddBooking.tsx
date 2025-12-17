@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react"
 import { Button, Form } from "react-bootstrap"
 import { NavLink } from "react-router"
-import ApiClient from "../../utils/ApiClient"
+import ApiClient from "../../utils/Apiclient.ts"
 
 interface FromBooking {
     tempat : string,
@@ -73,7 +73,7 @@ function AddBooking() {
             <Form.Group className="mb-3" controlId="formStatusPemesanan">
                 <Form.Label>Status Pemesanan</Form.Label>
                 <Form.Control
-                    value={form.waktu}
+                    value={form.statusPemesanan}
                     onChange={handleInputChange}
                     name="statusPemesanan"
                     type="text"

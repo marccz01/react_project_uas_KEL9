@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 import { NavLink } from "react-router"
-import ApiClient from "../../utils/ApiClient"
+import ApiClient from "../../utils/Apiclient.ts"
 import { Button, Table } from "react-bootstrap"
 
 interface Booking {
@@ -13,7 +13,7 @@ interface Booking {
     updateAt : string
 }
 
-function Movies() {
+function Booking() {
     const [booking, setBookings] = useState<Booking[]>([])
     const [loading, setLoading] = useState<boolean>(true)
 
