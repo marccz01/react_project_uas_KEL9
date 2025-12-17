@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState, type ChangeEvent, type FormEvent } from "react"
 import { Button, Form } from "react-bootstrap"
 import { NavLink } from "react-router"
-import ApiClient from "../../utils/Apiclient.ts"
+import ApiClient from "../../utils/ApiClient"
 import { useParams, useNavigate } from "react-router"
 
 interface FromBooking {

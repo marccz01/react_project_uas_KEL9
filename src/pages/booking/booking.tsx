@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 import { NavLink } from "react-router"
-import ApiClient from "../../utils/Apiclient.ts"
+import ApiClient from "../../utils/ApiClient"
 import { Button, Table } from "react-bootstrap"
 
 interface Booking {
